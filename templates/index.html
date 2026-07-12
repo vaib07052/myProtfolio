@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+  <title>Vaibhav Barnwal | Software Developer</title>
+</head>
+<body>
+
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link" data-target="#home">
+              <i class="uil uil-estate nav__icon"></i>
+              <span class="nav__tooltip"> Welcome</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link" data-target="#about">
+              <i class="uil uil-user nav__icon"></i>
+              <span class="nav__tooltip"> About</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link" data-target="#skills">
+              <i class="uil uil-file-alt nav__icon"></i>
+              <span class="nav__tooltip"> Skills</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link" data-target="#work">
+              <i class="uil uil-briefcase-alt nav__icon"></i>
+              <span class="nav__tooltip"> Portfolio</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link" data-target="#contact">
+              <i class="uil uil-message nav__icon"></i>
+              <span class="nav__tooltip"> Contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-apps"></i>
+      </div>
+
+      <!--==================== DARK MODE TOGGLE ====================-->
+      <div class="dark_mode">
+        <input class="dark_mode_input" type="checkbox" id="darkmode-toggle" />
+        <label class="dark_mode_label" for="darkmode-toggle">
+          <img src="{{ url_for('static', filename='images/Sun.svg') }}" alt="" class="sun" />
+          <img src="{{ url_for('static', filename='images/Moon.svg') }}" alt="" class="moon" />
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container">
+        <div class="home__content grid">
+
+          <div class="home__social">
+            <a href="https://www.instagram.com/vaib._.hav_/" target="_blank" rel="noopener noreferrer" class="home__social-icon">
+              <i class="uil uil-instagram"></i>
+              <span class="home__social-tooltip">Instagram</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vaibhav-barnwal-78092a278/" target="_blank" rel="noopener noreferrer" class="home__social-icon">
+              <i class="uil uil-linkedin"></i>
+              <span class="home__social-tooltip">LinkedIn</span>
+            </a>
+            <a href="https://github.com/vaib07052" target="_blank" rel="noopener noreferrer" class="home__social-icon">
+              <i class="uil uil-github-alt"></i>
+              <span class="home__social-tooltip">GitHub</span>
+            </a>
+            <a href="tel:+917052538998" target="_blank" rel="noopener noreferrer" class="home__social-icon">
+              <i class="uil uil-phone"></i>
+              <span class="home__social-tooltip">Phone</span>
+            </a>
+          </div>
+
+          <div class="home__img"></div>
+
+          <div class="home__data">
+            <h1 class="home__title" id="decrypt-name" data-text="Vaibhav Barnwal"></h1>
+
+            <span class="home__subtitle" id="type-animation" data-sequence="Full Stack Developer"></span>
+
+            <p class="home__description">
+              Passionate Software Developer pursuing a B.Tech in Artificial Intelligence &amp; Machine Learning,
+              with experience in building scalable web applications, solving Data Structures &amp; Algorithms
+              problems, and developing AI-powered solutions. I enjoy creating impactful software while
+              continuously improving my technical and problem-solving skills.
+            </p>
+            <a href="#contact" class="button button--flex">
+              Say Hello
+              <img src="{{ url_for('static', filename='images/send.svg') }}" alt="send icon" class="button__icon" />
+            </a>
+          </div>
+        </div>
+
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <img src="{{ url_for('static', filename='images/scroll.svg') }}" alt="" class="home__scroll-mouse" />
+            <span class="home__scroll-name">Scroll Down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My introduction</span>
+
+      <div class="about__container container grid">
+        <img src="{{ url_for('static', filename='images/profile1.jpg') }}" alt="" class="about__img" />
+        <div class="about__data">
+          <p class="about__description">
+            I am a B.Tech student specializing in Artificial Intelligence &amp; Machine Learning at Noida
+            Institute of Engineering and Technology (NIET), Greater Noida. I enjoy building full-stack web
+            applications and AI-powered solutions while continuously strengthening my knowledge of software
+            development, data structures &amp; algorithms, and modern technologies. I am currently seeking
+            opportunities where I can contribute, learn, and grow as a Software Engineer.
+          </p>
+          <a download="VaibhavBarnwal_Resume.pdf"
+             href="{{ url_for('static', filename='images/Sayyid_Marvan_VT_Full_Stack_Developer_Resume.pdf') }}"
+             class="button button--flex">
+            Download CV
+            <img src="{{ url_for('static', filename='images/files.svg') }}" alt="" class="button__icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My technical level</span>
+
+      <div class="skills__container container grid">
+
+        <!-- Programming Languages -->
+        <div class="skills__content">
+          <h3 class="skills__title">Programming Languages</h3>
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxl-java skills_icon"></i>
+                <div><h3 class="skills__name">Java</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-python skills_icon"></i>
+                <div><h3 class="skills__name">Python</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-javascript skills_icon"></i>
+                <div><h3 class="skills__name">JavaScript</h3></div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bx-data skills_icon"></i>
+                <div><h3 class="skills__name">SQL</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-html5 skills_icon"></i>
+                <div><h3 class="skills__name">HTML</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-css3 skills_icon"></i>
+                <div><h3 class="skills__name">CSS</h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skills__content">
+          <h3 class="skills__title">Frontend</h3>
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxl-react skills_icon"></i>
+                <div><h3 class="skills__name">React.js</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bx-code-curly skills_icon"></i>
+                <div><h3 class="skills__name">Next.js</h3></div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxl-tailwind-css skills_icon"></i>
+                <div><h3 class="skills__name">Tailwind CSS</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-bootstrap skills_icon"></i>
+                <div><h3 class="skills__name">Bootstrap</h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skills__content">
+          <h3 class="skills__title">Backend</h3>
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bx-leaf skills_icon"></i>
+                <div><h3 class="skills__name">Spring Boot</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-python skills_icon"></i>
+                <div><h3 class="skills__name">Flask</h3></div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxl-nodejs skills_icon"></i>
+                <div><h3 class="skills__name">Node.js</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bx-globe skills_icon"></i>
+                <div><h3 class="skills__name">REST APIs</h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skills__content">
+          <h3 class="skills__title">Databases</h3>
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bx-data skills_icon"></i>
+                <div><h3 class="skills__name">MySQL</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bx-data skills_icon"></i>
+                <div><h3 class="skills__name">PostgreSQL</h3></div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxl-mongodb skills_icon"></i>
+                <div><h3 class="skills__name">MongoDB</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-firebase skills_icon"></i>
+                <div><h3 class="skills__name">Firebase</h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI / ML -->
+        <div class="skills__content">
+          <h3 class="skills__title">AI / ML</h3>
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bx-chip skills_icon"></i>
+                <div><h3 class="skills__name">TensorFlow</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bx-camera skills_icon"></i>
+                <div><h3 class="skills__name">OpenCV</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bx-table skills_icon"></i>
+                <div><h3 class="skills__name">Pandas</h3></div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bx-calculator skills_icon"></i>
+                <div><h3 class="skills__name">NumPy</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bx-bulb skills_icon"></i>
+                <div><h3 class="skills__name">Scikit-learn</h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills__content">
+          <h3 class="skills__title">Tools</h3>
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxl-git skills_icon"></i>
+                <div><h3 class="skills__name">Git</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-github skills_icon"></i>
+                <div><h3 class="skills__name">GitHub</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-visual-studio skills_icon"></i>
+                <div><h3 class="skills__name">VS Code</h3></div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxl-android skills_icon"></i>
+                <div><h3 class="skills__name">Android Studio</h3></div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bx-send skills_icon"></i>
+                <div><h3 class="skills__name">Postman</h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification section">
+      <h2 class="section__title">Qualification</h2>
+      <span class="section__subtitle">My personal journey</span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div class="qualification__button qualification__active button--flex" data-target="#education">
+            <i class="uil uil-graduation-cap qualification__icon"></i>
+            Education
+          </div>
+          <div class="qualification__button button--flex" data-target="#experience">
+            <i class="uil uil-briefcase-alt qualification__icon"></i>
+            Experience
+          </div>
+        </div>
+
+        <div class="qualification__sections">
+          <!-- Education -->
+          <div class="qualification__content qualification__content-active" data-content="education">
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">B.Tech Computer Science &amp; Engineering (AI &amp; ML)</h3>
+                <span class="qualification__subtitle">Noida Institute of Engineering and Technology</span>
+                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> 2023 – 2027</div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">Senior Secondary (PCM)</h3>
+                <span class="qualification__subtitle">St. Xavier's School</span>
+                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> 2021 – 2023</div>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">High School</h3>
+                <span class="qualification__subtitle">St. Xavier's School</span>
+                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> 2019 – 2021</div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="qualification__content" data-content="experience">
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">SIH 2025 Finalist</h3>
+                <span class="qualification__subtitle">
+                  "Sadda Safar" – a real-time public transport and commuter
+                  assistance platform built with modern web technologies.
+                </span>
+                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Smart India Hackathon 2025</div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">Machine Learning Intern</h3>
+                <span class="qualification__subtitle">
+                  YBI Foundation – worked on AI and Machine Learning projects
+                  involving data preprocessing, model training, and prediction.
+                </span>
+                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Internship</div>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Open Source &amp; Personal Projects</h3>
+                <span class="qualification__subtitle">
+                  Built multiple full-stack and AI-based applications using React,
+                  Spring Boot, Flask, TensorFlow, SQL, and Firebase.
+                </span>
+                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Ongoing</div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== WORK ====================-->
+    <section class="work section" id="work">
+      <h2 class="section__title">Work</h2>
+      <span class="section__subtitle">Most recent works</span>
+
+      <div class="work__filters container grid">
+        <button class="work__item active-work" data-filter="All">ALL</button>
+        <button class="work__item" data-filter="Fullstack">FULLSTACK</button>
+        <button class="work__item" data-filter="React">REACT</button>
+        <button class="work__item" data-filter="Mobile App">MOBILE APP</button>
+      </div>
+
+      <div class="work__container container grid" id="work-container">
+        <!-- Project cards injected by JavaScript (see js/projects.js) -->
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Get in touch</h2>
+      <span class="section__subtitle">Contact Me</span>
+
+      <div class="contact__container container grid">
+        <div class="contact__content">
+          <div class="contact__info">
+            <a href="mailto:vaib07052@gmail.com" class="contact__card">
+              <i class="bx bx-mail-send contact__card-icon"></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">vaib07052@gmail.com</span>
+            </a>
+
+            <a href="tel:+917052538998" class="contact__card" target="_blank" rel="noopener noreferrer">
+              <i class="bx bx-phone contact__card-icon"></i>
+              <h3 class="contact__card-title">Phone</h3>
+              <span class="contact__card-data">+91 7052538998</span>
+            </a>
+
+            <div class="contact__card">
+              <i class="bx bx-map contact__card-icon"></i>
+              <h3 class="contact__card-title">Location</h3>
+              <span class="contact__card-data">Greater Noida, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+    <div class="footer__container container">
+      <h1 class="footer__title">Portfolio</h1>
+
+      <ul class="footer__list">
+        <li><a href="#about" class="footer__link">About</a></li>
+        <li><a href="#work" class="footer__link">Projects</a></li>
+        <li><a href="#skills" class="footer__link">Skills</a></li>
+      </ul>
+
+      <div class="footer__social">
+        <a href="https://www.instagram.com/vaib._.hav_/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="https://github.com/vaib07052" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vaibhav-barnwal-78092a278/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+      </div>
+
+      <span class="footer__copy">&#169; 2026 Vaibhav Barnwal. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!--==================== SCROLL UP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <script>
+    // Expose the Flask static URL prefix to JS files that need to build image paths.
+    window.STATIC_URL = "{{ url_for('static', filename='') }}";
+  </script>
+  <script src="{{ url_for('static', filename='js/projects.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
