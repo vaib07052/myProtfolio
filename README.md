@@ -1,4 +1,5 @@
 # MyPortfolio — Flask + HTML/CSS/JS version
+Live at - https://my-protfolio-delta-three.vercel.app/
 
 This is a full conversion of the original React (Vite) portfolio into a
 plain **Flask + HTML + CSS + JavaScript** stack. The visual design,
@@ -46,26 +47,6 @@ flask_portfolio/
    http://127.0.0.1:5000
    ```
 
-## What was converted
-
-| React (original)                          | Now                                   |
-|--------------------------------------------|----------------------------------------|
-| `Header.jsx` + `DarkMode.jsx`               | Static markup in `index.html` + logic in `main.js` |
-| `Home.jsx`, `Data.jsx`, `Social.jsx`, `ScrollDown.jsx` | Static markup in `index.html` |
-| `TextDecrypt.jsx` (`use-dencrypt-effect`)   | `decryptText()` in `main.js` |
-| `react-type-animation`                      | `typeAnimation()` in `main.js` |
-| `About.jsx`                                 | Static markup in `index.html` |
-| `Skills.jsx`, `Frontend.jsx`, `Backend.jsx` | Static markup in `index.html` |
-| `Qualification.jsx` (tab state)             | Tab logic in `main.js` |
-| `Work.jsx` + `Projects.jsx` (filter state)  | `projects.js` (data) + render/filter logic in `main.js` |
-| `Contact.jsx`                               | Static markup in `index.html` |
-| `Footer.jsx`, `ScrollUp.jsx`                | Static markup + scroll logic in `main.js` |
-| All component `.css` files                  | Merged into `static/css/main.css` |
-
-Everything (fonts, icon libraries — Boxicons & Unicons — Google Fonts,
-animations, dark mode toggle, mobile nav, scroll-triggered header/scroll-up
-button, qualification tabs, and work filtering) behaves exactly as it did
-in the React version.
 
 ## Notes
 
