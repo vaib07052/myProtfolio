@@ -4,6 +4,28 @@ const IMG = (window.STATIC_URL || "/static/") + "images/";
 
 const projects = [
   {
+    name: "Crown Clothing",
+    description:
+      "A full-stack e-commerce app with Stripe payment, Firebase authentication, and a serverless backend hosted on Netlify. Optimized for real use.",
+    stacks: ["React", "Redux Toolkit", "Stripe", "Firebase", "Netlify"],
+    link: "https://crown-clothing-be9922.netlify.app/",
+    github: "https://github.com/vaib07052/Exedo-estate-main",
+    image: IMG + "crown.png",
+    category: "Fullstack",
+  },
+
+   {
+    name: "Mode – Project Management App",
+    description:
+      "A Linear-inspired project tracker built with Next.js App Router. Includes auth, CRUD for issues, PostgreSQL backend, and clean Tailwind UI.",
+    stacks: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+    link: "https://mode-tau-ruddy.vercel.app",
+    github: "https://github.com/vaib07052/mode-FM-main",
+    image: IMG + "mode.png",
+    category: "Fullstack",
+  },
+  
+  {
     name: "Exedo Estate",
     description:
       "A MERN-based property listing platform with secure login, and CRUD functionality for real estate listings. Designed for efficient property management.",
@@ -13,6 +35,7 @@ const projects = [
     image: IMG + "ExedoEstate.png",
     category: "Fullstack",
   },
+  
   {
     name: "Foodeli",
     description:
@@ -23,27 +46,7 @@ const projects = [
     image: IMG + "Foodeli.png",
     category: "Fullstack",
   },
-  {
-    name: "Mode – Project Management App",
-    description:
-      "A Linear-inspired project tracker built with Next.js App Router. Includes auth, CRUD for issues, PostgreSQL backend, and clean Tailwind UI.",
-    stacks: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
-    link: "https://mode-tau-ruddy.vercel.app",
-    github: "https://github.com/vaib07052/mode-FM-main",
-    image: IMG + "mode.png",
-    category: "Fullstack",
-  },
-
-  {
-    name: "Crown Clothing",
-    description:
-      "A full-stack e-commerce app with Stripe payment, Firebase authentication, and a serverless backend hosted on Netlify. Optimized for real use.",
-    stacks: ["React", "Redux Toolkit", "Stripe", "Firebase", "Netlify"],
-    link: "https://crown-clothing-be9922.netlify.app/",
-    github: "https://github.com/vaib07052/Exedo-estate-main",
-    image: IMG + "crown.png",
-    category: "Fullstack",
-  },
+  
   {
     name: "SmartHost",
     description:
