@@ -50,7 +50,7 @@ const projects = [
       "A business site for an architecture firm, using React with animated Framer Motion navbar and contact form integration with Nodemailer.",
     stacks: ["React", "Framer Motion"],
     link: "http://www.smarthost.org.uk",
-    github: "https://github.com/sayyidmarvanvt/jmk",
+    github: "https://github.com/vaib07052",
     image: IMG + "SmartHost.png",
     category: "React",
   },
