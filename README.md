@@ -48,7 +48,7 @@ flask_portfolio/
    ```
 
 
-## Notes
+## Notes ////
 
 - The contact form was already commented out in the original React code
   (only the contact info cards were live), so this version keeps that
